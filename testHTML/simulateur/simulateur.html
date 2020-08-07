@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simulator</title>
+	<link rel="stylesheet" type="text/css" href="simulateur.css" />
+</head>
+<body>
+		<h1>HTML Simulator </h1>
+		<div class="slideContainer">
+			<p>Drag the slider to select the value (range: 0 - 100)</p>
+			<!-- default value à setter dans js plutôt? -->
+			<input type="range" name="sliderValue" id="sliderValue" min="0" max="100" value="50">
+			<p>Selected value : <span id="pfirstValue"></span></p>
+		</div>
+		<div class="constContainer">
+			<p>Multiply the value you choose with the constant value: <span id="constantValue"></span></p>
+			<input type="number" id="firstResult" name="firstResult" oninput="setResult(this.value); setCorrectResult(this.value)">
+		</div>
+		<div class="optionContainer">
+			<p>Option : Select an optionnal operation</p>
+			<input type="checkbox" id="firstOption" name="firstOption" value="multiplicationTwo">
+			<label for="firstOption">Multiply the result by 2</label>
+			<input type="checkbox" id="secondOption" name="secondOption" value="divisionTwo">
+			<label for="firstOption">Divide the result by 2</label>
+		</div>
+		<div class="validateContainer">
+			<!-- dans le cas de modèles complexes, prévisualisation avant de valider résultat -->
+				<button>Preview</button>
+				<button onclick="valid()">Submit your answer</button>
+		</div>
+		<script src="simulateur.js"></script>
+</body>
+</html>

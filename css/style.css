@@ -31,6 +31,12 @@ a:visited {
   line-height: 1.6;
 }
 
+.liste {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
 footer {
   margin-top: 100px;
   font-size: 0.8em;

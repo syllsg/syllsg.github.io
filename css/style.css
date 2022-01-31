@@ -1,7 +1,8 @@
 body {
-font-family: "Segoe UI", Georgia;
+  font-family: "Segoe UI", Georgia;
+  width: 90%;
   margin: auto;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 header {
@@ -29,6 +30,13 @@ a:visited {
   text-align: center;
   margin-top: 20px;
   line-height: 1.6;
+}
+
+.conteneur1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
 }
 
 .liste {

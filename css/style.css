@@ -38,6 +38,11 @@ a:visited {
   justify-content: space-around;
 }
 
+.conteneur3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .liste {
   text-align: center;

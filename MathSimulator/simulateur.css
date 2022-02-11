@@ -1,0 +1,39 @@
+body {
+  width: 90%;
+  margin: auto;
+  font-family: Calibri, Optima, sans-serif;
+  background-color: #dae6f1;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+h1 {
+  color: #459BEF;
+
+}
+
+.sliderContainer {
+width: 500px;
+margin:auto;
+}
+
+.box-minmax {
+display: flex;
+justify-content:space-around;
+}
+
+.constContainer {
+  margin: 2em;
+}
+.optionContainer {
+  margin: 2em;
+
+}
+
+#sliderNumberValue {
+  width: 250px;
+}
+
+.validateContainer {
+    margin: 1em;
+}

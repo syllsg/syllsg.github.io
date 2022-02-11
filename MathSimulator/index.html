@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simulator</title>
+	<link rel="stylesheet" type="text/css" href="simulateur.css" />
+	</head>
+<body>
+		<h1>Mental Math Test Simulator</h1>
+		<div class="resetContainer">
+				<button onclick="reset()">Reset all</button>
+		</div>
+		<div class="sliderContainer">
+			<p>Drag the slider to select the value (range: 0 - 100)</p>
+			<input type="range" name="sliderNumberValue" id="sliderNumberValue" min="0" max="100" value="defaultSliderValue" oninput="setSliderValue()">
+			<div class="box-minmax">
+	 		<span>0</span><span>100</span>
+ 			</div>
+			<p>Selected value : <span id="selectedValue"></span></p>
+		</div>
+		<div class="constContainer">
+			<p>Multiply the value you choose with the constant value : <span id="constantValue"></span></p>
+				</div>
+		<div class="optionContainer">
+			<p>Optionnal: Select one or multiple optionnal operation</p>
+			<input type="checkbox" id="firstOption" name="firstOption" value="multiplicationTwo" onchange="setFirstOption()">
+			<label for="firstOption">Multiply the result by 2</label>
+			<input type="checkbox" id="secondOption" name="secondOption" value="divisionTwo" onchange="setSecondOption()">
+			<label for="firstOption">Divide the result by 2</label>
+		</div>
+		<div class="firstResultContainer">
+			<p>Enter your result:</p>
+			<input type="number" id="firstResult" name="firstResult" oninput="setResult(this.value)">
+		</div>
+		<div class="validateContainer">
+			<!-- dans le cas de modèles complexes, prévisualisation avant de valider résultat
+				<button onclick="preview()">Preview</button>  -->
+				<button onclick="valid()">Submit your answer</button>
+		</div>
+		<script src="simulateur.js"></script>
+</body>
+</html>

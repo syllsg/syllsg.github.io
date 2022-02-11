@@ -36,7 +36,12 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
 
+.conteneur3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .liste {
